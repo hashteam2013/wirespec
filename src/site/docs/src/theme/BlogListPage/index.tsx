@@ -2,15 +2,16 @@ import React from "react";
 import Layout from "@theme/Layout";
 import BlogCard from "@site/src/components/BlogCard";
 import styles from "./blogs.module.css";
-import Seo from "@site/src/components/Seo";
+import SEO from "@site/src/components/SEO";
 
 export default function BlogListPage({ metadata, items }) {
   return (
-    <Layout
-      title="Wirespec Blogs"
-      description="Simplify your API development workflows, accelerate implementation, and guarantee strict adherence to defined contract specifications"
-      image="/img/code-snippet.jpg"
-    >
+    <Layout>
+      <SEO
+        title="Blog | Wirespec"
+        description="Explore in-depth articles on API design, contract-first development, code generation, and interface testing—insights and best practices from the team behind Wirespec."
+        type="website"
+      />
       <main className={styles.blogMain}>
         <h1 className={styles.heading}>Blog</h1>
         <div className={styles.grid}>
